@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(/fonts/Roboto.ttf) format('ttf');
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Roboto.ttf) format("ttf");
 }
 
 @layer utilities {
   .scrollbar::-webkit-scrollbar-thumb {
-    background: #A9A9A9;
+    background: #a9a9a9;
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
@@ -25,16 +25,26 @@ body {
 
   ::-webkit-scrollbar-track {
     border-radius: 100vh;
-    background: #FFFAFA;
+    background: #fffafa;
   }
 
   ::-webkit-scrollbar-thumb {
     background: #808080;
     border-radius: 100vh;
-    border: 3px solid #FFFAFA;
+    border: 3px solid #fffafa;
   }
 
   ::-webkit-scrollbar-thumb:hover {
     background: #696969;
+  }
+}
+
+@layer components {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .border-standard {
+    @apply border-solid border-2 rounded-md border-[#5F6368];
   }
 }
